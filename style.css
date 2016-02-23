@@ -1,0 +1,120 @@
+body {
+  background-color: rgb(155, 184, 162);
+}
+
+nav {
+  height: 57px;
+  background-color: rgb(147, 7, 49);
+}
+
+nav p {
+  font-size: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 30px;
+  padding-right: 130px;
+  color: white;
+  width: auto;
+  display: inline-block;
+  float: left;
+  margin: 0;
+}
+ul {
+  width: auto;
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+  float: right;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  font-size: 20px;
+  display: block;
+  color: white;
+  width: 65px;
+  text-align: center;
+  padding: 17px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: orange;
+}
+
+.menu-hide {
+  display: none;
+  float: right;
+  padding-right: 30px;
+}
+.mobile-nav {
+  padding-right: 17px;
+  display: none;
+}
+
+.mobile-nav ul {
+  display: none;
+  float: none;
+  /*display: block;*/
+}
+
+.mobile-nav li {
+  border: 1px solid white;
+  /*display: block;*/
+  width: 150px;
+}
+
+/* Tablet - Landscape */
+@media only screen and (max-width: 1024px) {
+  nav {
+    height: 114px;
+  }
+
+  nav p {
+    width: 100%;
+    display: block;
+    padding: 17px 0;
+  }
+
+  ul {
+    width: 95%;
+    text-align: center;
+  }
+
+  li a {
+    display: block;
+  }
+}
+
+/* Small Tablet (It's okay, stuff is expensive. No shame, brah.)*/
+@media only screen and (max-width: 676px) {
+  li a {
+    padding: 17px 10px;
+  }
+}
+
+
+
+/* Mobile Portrait */
+@media only screen and (max-width: 500px) {
+  nav {
+    height: 57px;
+  }
+
+  nav p {
+    text-align: left;
+    padding-left: 30px;
+    width: auto;
+  }
+  ul {
+  display: none;
+}
+
+.menu-hide {
+  display: block;
+}
+
+}
